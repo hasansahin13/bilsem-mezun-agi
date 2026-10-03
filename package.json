@@ -11,7 +11,7 @@
   "dependencies": {
     "@supabase/ssr": "latest",
     "@supabase/supabase-js": "latest",
-    "cesium": "latest",
+    "cesium": "^1.134.0",
     "next": "latest",
     "react": "latest",
     "react-dom": "latest"
