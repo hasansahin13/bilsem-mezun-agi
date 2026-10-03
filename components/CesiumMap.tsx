@@ -76,6 +76,19 @@ export default function CesiumMap({
         );
 
         // ==================================================
+        // MOBİL DOKUNMATİK KAMERA KONTROLLERİ
+        // ==================================================
+
+        const cameraController =
+          viewer.scene.screenSpaceCameraController;
+
+        cameraController.enableInputs = true;
+        cameraController.enableZoom = true;
+        cameraController.enableRotate = true;
+        cameraController.enableTilt = true;
+        cameraController.enableTranslate = true;
+
+        // ==================================================
         // HARİTA GÖRÜNTÜ AYARLARI
         // ==================================================
 
@@ -436,6 +449,7 @@ export default function CesiumMap({
     <div
       ref={containerRef}
       className="cesiumContainer"
+      style={{ touchAction: "none" }}
     />
   );
 }
