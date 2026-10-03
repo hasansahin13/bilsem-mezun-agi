@@ -67,7 +67,7 @@ export default function CesiumMap({
                 style:
                   Cesium.IonWorldImageryStyle
                     .AERIAL_WITH_LABELS,
-              }),
+              } as any),
 
             // Dünya yüzeyi
             terrainProvider:
